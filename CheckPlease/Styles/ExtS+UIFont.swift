@@ -11,6 +11,10 @@ extension UIFont {
     
     static var body: UIFont { Style.system.font(ofSize: 14, weight: .regular)}
     static var caption: UIFont { Style.system.font(ofSize: 12, weight: .regular)}
+    
+    static var amountInt: UIFont { Style.system.font(ofSize: 30, weight: .heavy)}
+    static var amountFractions: UIFont { Style.system.font(ofSize: 25, weight: .bold)}
+    static var amountRub: UIFont { Style.system.font(ofSize: 25, weight: .ultraLight)}
 }
 
 extension UIFont {

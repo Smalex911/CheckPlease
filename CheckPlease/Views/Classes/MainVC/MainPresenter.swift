@@ -7,12 +7,17 @@
 
 import Foundation
 
-protocol MainPresentationLogic: class {
+protocol MainPresentationLogic: AnyObject {
     
+    func updatePositions(_ positions: [Position]?)
 }
 
 final class MainPresenter: MainPresentationLogic {
     
     weak var viewController: MainDisplayLogic?
     
+    
+    func updatePositions(_ positions: [Position]?) {
+        viewController?.updatePositions(positions)
+    }
 }

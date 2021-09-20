@@ -10,9 +10,17 @@ import Foundation
 protocol MainBusinessLogic {
     
     var presenter: MainPresentationLogic? { get }
+    
+    func fetchPositions()
 }
 
 final class MainInteractor: MainBusinessLogic {
     
     var presenter: MainPresentationLogic?
+    
+    func fetchPositions() {
+        let positions: [Position] = [.mockShort, .mockLong].repeated(count: 5)
+        
+        presenter?.updatePositions(positions)
+    }
 }

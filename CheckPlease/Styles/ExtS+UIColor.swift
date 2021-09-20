@@ -9,11 +9,16 @@ import UIKit
 
 extension UIColor {
     
-    private static var black: UIColor { .init(rgb: 0x343B45) }
-    private static var blue: UIColor { .init(rgb: 0x30A8FF) }
-    private static var green: UIColor { .init(rgb: 0x30B648) }
-    private static var red: UIColor { .init(rgb: 0xFF3B30) }
-    private static var orange: UIColor { .init(rgb: 0xFF6F20) }
+    static var primary: UIColor { .init(rgb: 0xF02F5D) }
+    static var secondary: UIColor { .init(rgb: 0x30C136) }
+    static var destruct: UIColor { .init(rgb: 0xF63E3E) }
+    
+    static var text: UIColor { .init(rgb: 0x333333) }
+    static var textContrast: UIColor { .init(rgb: 0xFFFFFF) }
+    static var placeholder: UIColor { .init(rgb: 0xABABAB) }
+    
+    static var background: UIColor { .init(rgb: 0xFFFFFF) }
+    static var backgroundCard: UIColor { UIColor.init(rgb: 0xDFDFDF).withAlphaComponent(0.5) }
 }
 
 extension UIColor {
